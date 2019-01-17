@@ -59,8 +59,8 @@ html, body {
 }
 
 // Variables
-//@
-//@
+@textcolor: rgba(47, 0, 255, 0.582);
+
 
 // Mixins
 .center() {
@@ -71,31 +71,19 @@ html, body {
 }
 
 .font() {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-family: Arial, Helvetica, sans-serif;
+	
 }
 
 
 // General Styles
-h2 {
-	font-size: 1.5rem;
-}
+
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  background-color: blue;
-  
-}
-
-
-
-body {
-	height: 100%;
-  }
-  h2 {
-	font-size: 4rem;
-  }
-  
+	background-color: rgba(6, 34, 8, 0.562);
 
   header {
 	display: flex;
@@ -103,53 +91,116 @@ body {
 	margin: 30px;
 	align-items: center;
 	
-  }
-  h1 {
-	font-size: 4rem;
-	font-family: Arial, Helvetica, sans-serif;
-  }
-  h2 {
-	font-size: 4rem;
-	margin: 20px 0;
-  }
-  h3 {
-	display: flex;
-	justify-content: center;
-	font-size: 2rem;
-  }
-  nav {
+	h1 {
+		font-size: 3rem;
+		color: @textcolor;
+		@media(max-width: 500px ) {
+			.font();
+			}
+		}
+nav {
 	display: flex;
 	justify-content: space-around;
 	width: 50%;
+	@media(max-width: 500px ) {
+   width: 100%;
+			
+		}
+	a{
+		color: @textcolor;
+		.font();
+		@media(max-width: 500px ) {
+			font-size: 1rem;
+			}
+		
+	}
+}	
+	}
+  h2 {
+	font-size: 4rem;
+	margin: 20px 0;
+	color: @textcolor;
+	@media(max-width: 500px ){
+		font-size: 2.5rem;
+		color: @textcolor;
+		margin: 20px 0;
+}
+	
+	}
+
+
+	
+h3 {
+	.center();
+	font-size: 2rem;
+	padding: 20px 0;
+	color: @textcolor;
   }
-  .title {
+  
+ .title {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-  }
-  p {
+	
+	a{
+	color: blue;
+	.font();
+	}
+	p{
+		margin: auto;
+		padding: 0;
+	}
+imgs {
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+		@media(max-width: 800px ) {
+			display: flex;
+			flex-direction: column-reverse;
+			align-items: center;
+		}
+		}
+		
+		
+	}
+	p {
 	display: flex;
 	justify-content: space-between;
-  
-	margin: 10px 10px;
+  padding: 20px 20px;
+	margin: 10px 0;
 	font-size: 1.2rem;
   
   }
   
   objheader {
-	  .center
+		.center;
+		.font();
+		padding: 0 20px;
 	  
 	}
-	
-	@media(max-width: 500px ) {
-		.container {
+	ul {
+			display: flex;
+			flex-direction: column;
+			padding: 20px 20px;
 			
-			
-		}
-		}
+	}
 	
+	li {
+		.font();
+	}
+	@media(max-width: 500px ){	
+			.img2{
+					display: none;
+				}
+			}
+}
+
+
+	 
 	
-			
+
+	
+
 
 
 
