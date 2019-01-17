@@ -135,12 +135,18 @@ body {
   height: 100%;
 }
 h2 {
-  font-size: 4rem;
+  font-size: 1.5rem;
 }
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  background-color: dodgerblue;
+  background-color: blue;
+}
+body {
+  height: 100%;
+}
+h2 {
+  font-size: 4rem;
 }
 header {
   display: flex;
@@ -149,7 +155,7 @@ header {
   align-items: center;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 h2 {
@@ -170,4 +176,15 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+p {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px;
+  font-size: 1.2rem;
+}
+objheader {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
