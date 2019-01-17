@@ -145,6 +145,14 @@ body {
   margin: 30px;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .container header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 10px;
+  }
+}
 .container header h1 {
   font-size: 3rem;
   color: rgba(47, 0, 255, 0.582);
